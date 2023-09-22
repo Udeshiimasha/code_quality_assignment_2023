@@ -45,13 +45,13 @@ public class TravelCostCalculator {
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-            System.out.print("Enter your destination: ");
+            System.out.print("Enter your destination : ");
             String destination = reader.readLine().toUpperCase();
 
             double flight_cost = c.getOrDefault(destination, 0.0);
             double hotel_cost = a.getOrDefault(destination, 0.0);
 
-            System.out.print("Enter your stay duration in days: ");
+            System.out.print("Enter your stay duration in days : ");
             int stay_duration = Integer.parseInt(reader.readLine());
             hotel_cost *= stay_duration;
 
