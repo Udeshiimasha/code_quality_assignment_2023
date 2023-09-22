@@ -51,7 +51,7 @@ public class TravelCostCalculator {
             double flight_cost = c.getOrDefault(destination, 0.0);
             double hotel_cost = a.getOrDefault(destination, 0.0);
 
-            System.out.print("Enter your stay duration in days : ");
+            System.out.println("Enter your stay duration in days : ");
             int stay_duration = Integer.parseInt(reader.readLine());
             hotel_cost *= stay_duration;
 
